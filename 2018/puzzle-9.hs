@@ -7,7 +7,7 @@ polymer = "kLltgGTKFjdDpPkKcCJjJhHfmMAjJasSFfHEesYMmTtrRBjJmcCMbDdmMyOoUuGLrRlJe
 reduce :: String -> String
 reduce []                                          = []
 reduce (x:[])                                      = [x] 
-reduce (x:y:xs) | x /= y && toLower x == toLower y = reduce xs
+reduce (x:y:xs) | toLower x == toLower y && x /= y = reduce xs
                 | otherwise                        = x : reduce (y:xs)
 
 shrink :: String -> String
