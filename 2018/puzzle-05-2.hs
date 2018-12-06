@@ -26,3 +26,6 @@ removeUnit xs x = length $ shrink $ filter (\x' -> toLower x' /= x) xs
 puzzle10 :: Int
 puzzle10 = head $ sort [removeUnit polymer' x | x <- ['a'..'z'] ]
            where polymer' = shrink polymer
+
+
+main = print puzzle10
