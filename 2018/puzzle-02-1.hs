@@ -14,4 +14,4 @@ candidate n = any (\(_, x) -> x == n)
 
 counted = charCount charGroups
 
-answer = (length (filter (candidate 2) counted)) * (length (filter (candidate 3) counted))
+puzzle_02_1 = (length (filter (candidate 2) counted)) * (length (filter (candidate 3) counted))

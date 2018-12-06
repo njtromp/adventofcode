@@ -44,5 +44,5 @@ minutes = group (sort (minutesAsleep (recordsForGuard records sleepiestGuard)))
 favoriteSleepingMinute :: Int
 favoriteSleepingMinute = snd (head (reverse (sort (map (\xs -> (length xs, head xs)) minutes))))
 
-puzzle7 :: Int
-puzzle7 = sleepiestGuard * favoriteSleepingMinute
+puzzle_04_1 :: Int
+puzzle_04_1 = sleepiestGuard * favoriteSleepingMinute

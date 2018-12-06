@@ -15,5 +15,5 @@ findEqualsButOne (id:ids) = [(id, x) | x <- ids, countDiffs id x == 1] ++ findEq
 removeNotSameChars :: [(String, String)] -> String
 removeNotSameChars xs = fst (head ( map (\(x,y) -> unzip (filter (\(x',y') -> x' == y') (zip x y))) xs))
 
-puzzle4 :: String
-puzzle4 = removeNotSameChars (findEqualsButOne boxIds)
+puzzle_02_1 :: String
+puzzle_02_1 = removeNotSameChars (findEqualsButOne boxIds)

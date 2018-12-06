@@ -15,5 +15,5 @@ shrink xs | xs == ys  = xs
           | otherwise = shrink ys
            where ys = reduce xs
 
-puzzle9 :: Int
-puzzle9 = length $ shrink polymer
+puzzle_05_1 :: Int
+puzzle_05_1 = length $ shrink polymer

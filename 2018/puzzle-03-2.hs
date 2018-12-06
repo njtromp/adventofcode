@@ -23,8 +23,8 @@ singleIds = nub (sort (map (\(_,_,i) -> head i) (filter (\(_,_,is) -> length is 
 multipleIds :: [Int]
 multipleIds = nub (sort [ x | xs <- nub (map (\(_,_,is) -> is) (filter (\(_,_,is) -> length is > 1) combinedClaims)), x <- xs])
 
-puzzle6 :: [Int]
-puzzle6 = [ i | i <- singleIds, not (elem i multipleIds)]
+puzzle_03_2 :: [Int]
+puzzle_03_2 = [ i | i <- singleIds, not (elem i multipleIds)]
 
 
 

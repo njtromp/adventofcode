@@ -19,5 +19,5 @@ claimed = [ (c',r') | ((c,r),(w,h)) <- claims, c' <- [c..c+w-1], r' <- [r..r+h-1
 multipleClaims :: [[(Int, Int)]]
 multipleClaims = group (sort claimed)
 
-puzzle5 :: Int
-puzzle5 = length (filter (\x -> length x > 1) multipleClaims )
+puzzle_03_1 :: Int
+puzzle_03_1 = length (filter (\x -> length x > 1) multipleClaims )

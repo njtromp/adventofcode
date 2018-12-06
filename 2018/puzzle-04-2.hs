@@ -45,5 +45,5 @@ blabla = reverse (sort (map (\(i,xs) -> (head (reverse (sort xs)),i)) bla))
 sol :: ((Int, Int), ID) -> Int
 sol ((_,m),i) = m * i
 
-puzzle8 :: Int
-puzzle8 = sol (head blabla)
+puzzle_04_2 :: Int
+puzzle_04_2 = sol (head blabla)
