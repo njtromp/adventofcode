@@ -84,9 +84,6 @@ public class Puzzle_07 {
                     return o1.timeFinished - o2.timeFinished;
                 }
             });
-            if (active.isEmpty()) {
-                System.out.println();
-            }
             Node nearest = active.get(0);
             time = nearest.timeFinished;
             for (Node node : active) {
